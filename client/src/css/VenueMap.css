@@ -1,0 +1,54 @@
+.venue-map svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+}
+
+.venue-map polygon {
+    fill: rgba(55, 216, 232, 0);
+    stroke: rgba(255, 255, 255, 0);
+    stroke-width: 3;
+    cursor: pointer;
+    outline: none;
+    transition: fill 150ms ease, stroke 150ms ease;
+}
+
+.venue-map polygon.active {
+    fill: rgba(217, 29, 242, 0.28);
+    stroke: #fff;
+}
+
+.venue-label {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 150ms ease;
+}
+
+.venue-label.visible {
+    opacity: 1;
+}
+
+.venue-label rect {
+    fill: var(--main-color);
+    stroke: #fff;
+    stroke-width: 2;
+}
+
+.venue-label text {
+    fill: #fff;
+    font-family: 'Nunito Sans', Verdana, sans-serif;
+    font-size: 17px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.venue-map-hint {
+    margin: 0.75rem 0 0;
+    text-align: center;
+    color: var(--ink-dim);
+    font-size: 0.9rem;
+}

@@ -1,33 +1,50 @@
 .app {
-    background: url('./assets/unitygrid.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-header {
-    padding: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px 3rem;
 }
 
 .main-header {
-    height: 30vh;
-    width: 85vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
     align-items: flex-end;
-    position: relative;
-    z-index: 1;
+    justify-content: space-between;
+    padding: 3rem 0 2rem;
+}
+
+.brand {
+    text-decoration: none;
+}
+
+.brand p {
+    color: #fff;
+    margin: 0.4rem 0 0;
+    text-shadow: 1px 1px 3px black;
+    font-weight: 600;
 }
 
 .header-buttons {
-    width: 30%;
     display: flex;
-    justify-content: space-around;
+    gap: 0.75rem;
 }
 
-.header-buttons button {
-    margin-right: 20px;
-    margin-left: 20px;
+.header-buttons [role='button'] {
+    padding: 0.5rem 1.3rem;
+    font-size: 1rem;
+    background: rgba(3, 1, 64, 0.6);
+    border-color: #fff;
+    color: #fff;
+}
+
+.header-buttons [role='button'].active {
+    background: var(--main-color);
+    border-color: var(--main-color);
+}
+
+.main-footer {
+    text-align: center;
+    color: var(--ink-dim);
+    font-size: 0.85rem;
+    margin-top: 4rem;
 }

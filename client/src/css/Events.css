@@ -1,0 +1,39 @@
+.events-header p {
+    color: var(--ink-dim);
+    margin: 0.4rem 0 1.5rem;
+}
+
+.events-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    align-items: flex-end;
+    padding: 1rem 1.25rem;
+    background: var(--panel);
+    border: 1px solid var(--panel-line);
+    border-radius: 12px;
+    margin-bottom: 0.5rem;
+}
+
+.events-filters label {
+    flex: 1 1 220px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.events-filters select {
+    width: 100%;
+    margin: 0.35rem 0 0;
+}
+
+.events-filters .checkbox {
+    flex: 0 1 auto;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.8rem;
+}
+
+.events-filters .checkbox input {
+    margin: 0;
+}
